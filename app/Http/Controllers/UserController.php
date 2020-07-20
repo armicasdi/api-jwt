@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function index(){
-        $users = Producto::simplePaginate(10);
+        $users = User::simplePaginate(10);
 
         return $users;
     }
